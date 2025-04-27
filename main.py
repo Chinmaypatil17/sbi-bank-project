@@ -1,7 +1,8 @@
 #main.py
 from register import *
 from bank import *
-print("main file running")
+
+print("welcome chinmays project")
 
 status = False
 print("Welcome to SBI Banking Project")
