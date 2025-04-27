@@ -1,5 +1,7 @@
+#main.py
 from register import *
 from bank import *
+print("main file running")
 
 status = False
 print("Welcome to SBI Banking Project")

@@ -1,7 +1,9 @@
-#User Registration Signin Signup
-from customer import *
+#register.py
 from bank import Bank
 import random
+from database import *
+from customer import *
+
 
 def SignUp():
     username = input("Create Username: ")
@@ -28,6 +30,7 @@ def SignUp():
     bobj = Bank(username, account_number)
     bobj.create_transaction_table()
 def SignIn():
+    
     username = input("Enter Username: ")
     temp = db_query(f"SELECT username FROM customers where username = '{username}';")
     if temp:

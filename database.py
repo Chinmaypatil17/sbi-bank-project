@@ -1,10 +1,12 @@
 #Database Management Banking
+#database.py
 import mysql.connector as sql
+import pymysql
 
-mydb = sql.connect(
+mydb = pymysql.connect(
             host="localhost",
             user="root",
-            passwd="7877",
+            passwd="root",
             database="bank"
 )
 
